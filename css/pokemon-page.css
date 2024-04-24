@@ -1,0 +1,1268 @@
+/* All */
+* {
+    box-sizing: border-box;
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1em;
+}
+
+h4 {
+    font-size: 1em;
+}
+
+h5 {
+    font-size: 0.6em
+}
+
+.body-i{
+    margin-left: 10px;
+    margin-top: 20px;
+    padding-right: 0px;
+}
+
+.hide-h > i, i {
+    font-size: 2em;
+    float: left;
+    margin-left: 40px;
+    margin-top: 93px;
+    padding-left: 0px;
+    padding-right: 60px;
+    width: 50px
+}
+
+td {
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+th {
+    font-size: 0.7em;
+    font-weight: 500;
+}
+
+#base-stats-table>tr {
+    height: 50px;
+}
+
+
+:root {
+    --ball-end: 1400px;
+    --ball-top: 0px;
+
+    --background-type1: rgb(241, 157, 104);
+    --background-type2: rgb(107, 143, 251);
+
+    --h0b0-background-type1: rgb(255 ,0 ,0);
+    --h0b0-backgruond-type2: rgb(255,255,255);
+
+    --h1b0-background-type1: rgb(0 ,0 ,0);
+    --h1b0-backgruond-type2: rgb(255,255,255);
+
+    --h2b0-background-type1: rgb(0 ,0 ,0);
+    --h2b0-backgruond-type2: rgb(255,255,255);
+
+    --h0b1-background-type1: rgb(0 ,0 ,0);
+    --h0b1-backgruond-type2: rgb(255,255,255);
+
+    --h1b1-background-type1: rgb(0 ,0 ,0);
+    --h1b1-backgruond-type2: rgb(255,255,255);
+
+    --h2b1-background-type1: rgb(0 ,0 ,0);
+    --h2b1-backgruond-type2: rgb(255,255,255);
+
+    --h0b2-background-type1: rgb(0 ,0 ,0);
+    --h0b2-backgruond-type2: rgb(255,255,255);
+
+    --h1b2-background-type1: rgb(0 ,0 ,0);
+    --h1b2-backgruond-type2: rgb(255,255,255);
+    
+    --h2b2-background-type1: rgb(0 ,0 ,0);
+    --h2b2-backgruond-type2: rgb(255,255,255);
+
+
+
+}
+
+/* Animations */
+/*FUSION TYPE BACKGROUND CHANGES */
+
+@keyframes fusion-background-h0b0 {
+    0% {
+        background: var(--h0b0-background-type1)
+    }
+
+    50% {
+        background: var(--h0b0-background-type2)
+    }
+
+    100% {
+        background: var(--h0b0-background-type1)
+    }
+}
+
+@keyframes fusion-background-h1b0 {
+    0% {
+        background: var(--h1b0-background-type1)
+    }
+
+    50% {
+        background: var(--h1b0-background-type2)
+    }
+
+    100% {
+        background: var(--h1b0-background-type1)
+    }
+}
+
+@keyframes fusion-background-h2b0 {
+    0% {
+        background: var(--h2b0-background-type1)
+    }
+
+    50% {
+        background: var(--h2b0-background-type2)
+    }
+
+    100% {
+        background: var(--h2b0-background-type1)
+    }
+}
+
+@keyframes fusion-background-h0b1 {
+    0% {
+        background: var(--h0b1-background-type1)
+    }
+
+    50% {
+        background: var(--h0b1-background-type2)
+    }
+
+    100% {
+        background: var(--h0b1-background-type1)
+    }
+}
+
+@keyframes fusion-background-h1b1 {
+    0% {
+        background: var(--h1b1-background-type1)
+    }
+
+    50% {
+        background: var(--h1b1-background-type2)
+    }
+
+    100% {
+        background: var(--h1b1-background-type1)
+    }
+}
+
+@keyframes fusion-background-h2b1 {
+    0% {
+        background: var(--h2b1-background-type1)
+    }
+
+    50% {
+        background: var(--h2b1-background-type2)
+    }
+
+    100% {
+        background: var(--h2b1-background-type1)
+    }
+}
+
+@keyframes fusion-background-h0b2 {
+    0% {
+        background: var(--h0b2-background-type1)
+    }
+
+    50% {
+        background: var(--h0b2-background-type2)
+    }
+
+    100% {
+        background: var(--h0b2-background-type1)
+    }
+}
+
+@keyframes fusion-background-h1b2 {
+    0% {
+        background: var(--h1b2-background-type1)
+    }
+
+    50% {
+        background: var(--h1b2-background-type2)
+    }
+
+    100% {
+        background: var(--h1b2-background-type1)
+    }
+}
+
+@keyframes fusion-background-h2b2 {
+    0% {
+        background: var(--h2b2-background-type1)
+    }
+
+    50% {
+        background: var(--h2b2-background-type2)
+    }
+
+    100% {
+        background: var(--h2b2-background-type1)
+    }
+}
+
+@keyframes ball-x-animation {
+    0% {
+        display: block;
+        left: calc(var(--ball-end)*0/7)
+    }
+
+    10% {
+        left: calc(var(--ball-end)*1/7)
+    }
+
+    20% {
+        left: calc(var(--ball-end)*2/7)
+    }
+
+    30% {
+        left: calc(var(--ball-end)*3/7)
+    }
+
+    40% {
+        left: calc(var(--ball-end)*4/7)
+    }
+
+    50% {
+        left: calc(var(--ball-end)*5/7)
+    }
+
+    60% {
+        left: calc(var(--ball-end)*6/7)
+    }
+
+    70% {
+        left: calc(var(--ball-end))
+    }
+
+    100% {
+        left: calc(var(--ball-end))
+    }
+}
+
+@keyframes ball-y-animation {
+    0% {
+        transform: rotate(-0.25turn);
+        bottom: calc(0 - var(--ball-top));
+    }
+
+    10% {
+        bottom: 50px;
+    }
+
+    20% {
+        bottom: 95px;
+    }
+
+    30% {
+        bottom: 131px;
+    }
+
+    40% {
+        bottom: 159px;
+    }
+
+    50% {
+        bottom: 179px;
+    }
+
+    60% {
+        bottom: 191px;
+    }
+
+    70% {
+        bottom: 200px;
+        transform: rotate(0);
+    }
+
+    100% {
+        bottom: 200px;
+        transform: rotate(0);
+    }
+}
+
+@keyframes pokemon-capture {
+    50% {
+        filter: invert(100%) sepia(92%) saturate(6%) hue-rotate(36deg) brightness(108%) contrast(100%);
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes pokeball-caught {
+    0% {
+        transform: rotate(0);
+    }
+
+    10% {
+        transform: rotate(.15turn);
+    }
+
+    25% {
+        transform: rotate(0);
+    }
+
+    30% {
+        transform: rotate(0);
+    }
+
+    45% {
+        transform: rotate(-0.15turn);
+    }
+
+    60% {
+        transform: rotate(0);
+    }
+
+    65% {
+        transform: rotate(0);
+    }
+
+    80% {
+        transform: rotate(0.15turn);
+    }
+
+    90% {
+        transform: rotate(0);
+        filter: initial;
+        opacity: 1;
+    }
+
+    100% {
+        filter: invert(0%) sepia(95%) saturate(21%) hue-rotate(2deg) brightness(101%) contrast(107%);
+        opacity: 0;
+    }
+}
+
+.evolve-cells.h0b0{
+    /* background-color: rgb(241, 157, 104); */
+    animation-name: fusion-background-h0b0;
+    background-color: rgb(241, 157, 104);
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+.evolve-cells.h1b0{
+    animation-name: fusion-background-h1b0;
+    background-color: rgb(241, 157, 104);
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+.evolve-cells.h2b0{
+    animation-name: fusion-background-h2b0;
+    background-color: rgb(241, 157, 104);
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+.evolve-cells.h0b1{
+    animation-name: fusion-background-h0b1;
+    background-color: rgb(241, 157, 104);
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+.evolve-cells.h1b1{
+    animation-name: fusion-background-h1b1;
+    background-color: rgb(241, 157, 104);
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+.evolve-cells.h2b1{
+    animation-name: fusion-background-h2b1;
+    background-color: rgb(241, 157, 104);
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+.evolve-cells.h0b2{
+    animation-name: fusion-background-h0b2;
+    background-color: rgb(241, 157, 104);
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+.evolve-cells.h1b2{
+    animation-name: fusion-background-h1b2;
+    background-color: rgb(241, 157, 104);
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+.evolve-cells.h2b2 {
+    animation-name: fusion-background-h2b2;
+    background-color: rgb(241, 157, 104);
+    animation-duration: 26s;
+    animation-iteration-count: infinite;
+}
+
+/* .evolve-cells {
+    animation-name: fusion-background-h0b0;
+    background-color: rgb(241, 157, 104);
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+} */
+
+/* #h1b0img>.fusion-image {
+    animation-name: fusion-clicked;
+    animation-duration: 2s;
+} */
+
+.ball-relative-container {
+    position: relative;
+    top: var(--ball-top);
+    left: -225px;
+
+}
+
+.animation-ball-container-x {
+    position: absolute;
+    z-index: 1;
+    height: 150px;
+    width: 150px;
+
+
+    animation: ball-x-animation 1.5s linear 1s 1 forwards
+}
+
+.animation-ball-container-y {
+    position: absolute;
+    z-index: 1;
+    height: 50px;
+    width: 50px;
+
+
+    animation-name: ball-y-animation;
+    animation-duration: 1.5s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+
+}
+
+.animation-pokemon-capture {
+    animation-name: pokemon-capture;
+    animation-delay: 2.4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.animation-pokeball-image {
+
+    animation: pokeball-caught 2s linear 2.3s 1 forwards;
+}
+
+
+
+.ball-container-x {
+    display: none;
+}
+
+
+
+
+
+
+
+
+.pokeball-image {
+    height: 100px;
+
+    /* Original data - height: 100px 
+    distance - 23px -- ball-top
+    ball-end + 323px */
+}
+
+/* Classes */
+
+.explain-body-head{
+    font-size: 0.6em;
+    font-weight: 400;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+
+.catchRate-text {
+    margin-top: 15px;
+    font-size: 1em
+}
+
+.ability-data>h5 {
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 5px;
+    margin-bottom: 0px;
+    font-size: 0.8em;
+    font-weight: 650;
+    text-transform: capitalize;
+}
+h5.hidden-ability-text{
+    font-size: 0.6em;
+    font-weight: 400;
+    padding: 0px 0px 12px 20px;
+}
+
+.banner {
+    height: 100px;
+    width: 100%;
+}
+
+.barchart-bar {
+    background-color: lightskyblue;
+    height: 12px;
+    padding-top: 16px;
+    border-radius: 5px;
+    border: 1px rgba(124, 124, 124, 0.178) solid
+}
+
+.below-40 {
+    background-color: rgb(235, 73, 73);
+}
+
+.above-40 {
+    background-color: rgb(255, 129, 71);
+}
+
+.above-70 {
+    background-color: rgb(255, 224, 49);
+}
+
+.above-100 {
+    background-color: rgb(125, 235, 125);
+}
+
+.above-120 {
+    background-color: rgb(78, 247, 182)
+}
+
+
+.body-name {
+    text-transform: capitalize;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-size: 1em;
+}
+
+td.base-stat {
+    padding-right: 20px;
+}
+
+.td-stat {
+    color: rgba(78, 78, 78, 0.85);
+    font-size: 0.6em;
+}
+
+.td-min-stat,
+.td-max-stat {
+    font-size: 0.6em;
+}
+
+.cell-barchart {
+    width: 100%;
+}
+
+.cell-barchart,
+.base-stat,
+.td-stat,
+.td-min-stat,
+.td-max-stat,
+.stats-border-bottom {
+    border-bottom: 1px rgba(209, 209, 209, 0.5) solid
+}
+
+.base-stat-title {
+    text-align: left;
+    padding-left: 20px;
+    font-size: 1.4em;
+    padding-top: 20px;
+}
+
+.top-stats {
+    border-top: 1px rgba(209, 209, 209, 0.5) solid
+}
+
+.evolve-cells {
+    height: 288px;
+    width: 288px;
+    border-radius: 144px;
+    padding: 0px 0px 0px 0px;
+}
+
+.image-width{
+    width: 288px;
+}
+
+.evolve-divider {
+    height: 170px;
+    margin-top: 30px;
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.evolve-info {
+    padding-top: 20px;
+}
+
+.evolve-info.h-evolve-1{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.evolve-title {
+    font-size: 1.8em;
+    padding-top: 8px;
+}
+
+.head-name {
+    text-transform: capitalize;
+    font-size: 1em;
+}
+
+
+
+
+
+.pokemon-data>td {
+    width: 150px;
+}
+
+.pokemon-data>tr {
+    margin-bottom: 30px
+}
+
+h4.pokemon-data {
+    margin-top: 40px;
+    font-size: 1.2em;
+    text-align: left;
+}
+
+/* Move Table */
+
+/* IDK WHAT THIS DOES LOL */
+tbody:before {
+    content: "@";
+    display: block;
+    line-height: 10px;
+    text-indent: -99999px;
+}
+
+.icon-container.left {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 50px;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+}
+
+.icon-container.right {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 90px;
+    width: 64px;
+    height: 64px;
+    overflow: hidden;
+}
+
+.icon-container2 {
+    padding: 0px 0px 0px 0px;
+    width: 128px;
+    height: 128px;
+    overflow: hidden;
+}
+
+.location-body-icon-container, .location-head-icon-container{
+    width: 84px;
+    height: 64px;
+    overflow: hidden;
+    padding: 0px 0px 0px 0px;
+    margin-left: 20px;
+    padding-left: 20px
+}
+
+.icon {
+    width: 128px;
+    height: 64px;
+}
+
+.icon2 {
+    width: 256px;
+    height: 128px;
+}
+
+.icon-small{
+    width: 64px !important;
+    height: 64px !important;
+}
+
+
+.icon-text {
+    font-size: medium;
+}
+
+#nextHeadFusion:hover,
+#nextBodyFusion:hover,
+#prevHeadFusion:hover,
+#prevBodyFusion:hover,
+.icon2:hover {
+    opacity: 0.5;
+}
+
+.random-reverse{
+    margin-top: 30px;
+}
+
+.image-element-head,
+.image-element-body {
+    margin: 0px 0px -30px 0px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 218px;
+    width: 218px;
+    padding-top: 0px;
+}
+
+.standard-pokemon-align {
+    padding-bottom: 20px;
+}
+
+table.moves-learned {
+    /* width: 100%;
+    border: black solid 2px */
+}
+
+.col-left-moves{
+    /* padding-right: 50px;
+    padding-left: 50px */
+}
+
+.col-right-moves{
+    /* padding-left: 50px;
+    padding-right: 50px; */
+    border-left: 1px  rgba(209, 209, 209, 1) solid;
+}
+
+table.moves-learned.level {
+    text-align: right;
+}
+
+table.moves-learned.moveName {
+    text-align: left;
+}
+
+hr.learn-move-info,
+hr.learn-move-info2 {
+    /* padding: 5px 0px 5px 0px; */
+    height: 0px;
+    opacity: 0;
+    margin: 5px 10px 5px 10px
+}
+
+.break-row,
+.break-row3 {
+    border-bottom: rgb(200, 200, 200) 1px solid;
+
+
+}
+
+
+
+/*  */
+.search-container {
+    padding-left: 0px;
+    margin-left: -22.5px;
+    width: 10 0%;
+    height: 56px;
+    padding-top: 25px;
+}
+
+.search {
+    font-size: 0.8em;
+    width: 140%;
+    height: 56px;
+    border: 1px solid rgba(209, 209, 209, 0.7)
+}
+
+.td-stat {
+    padding-right: 10px;
+    width: 20%;
+    text-align: right;
+}
+
+.td-min-stat {
+    padding: 0px 20px 0px 20px;
+    text-align: right;
+}
+
+tr.include-hr {
+    border-bottom: 1px solid rgba(209, 209, 209, 0.5);
+}
+
+tr.include-hr>td,
+tr.include-hr>th {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.type>div {
+    font-size: 0.65em;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5)
+}
+
+.type-text {
+    font-size: 0.7em !important;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    font-weight: 500;
+    color: white;
+    text-shadow: 1px 1px rgba(0, 0, 0, 0.5)
+}
+
+.type-chart-title {
+    text-align: left;
+    margin-top: 20px
+}
+
+#randFusion {
+    margin-top: 8px
+}
+
+.type-1,
+.type-2 {
+padding: 0px 0px 0px 0px;
+text-align: left;
+    font-weight: 700;
+    text-transform: capitalize;
+    border-radius: 10px;
+    width: 45%;
+}
+
+.type-1{
+    margin-right: 15px;
+}
+
+.fusion-pokemon {
+    padding: 0px
+}
+
+
+
+.large-background {
+    background-color: lightslategrey;
+
+    /* TEMPORARY DELETE */
+    height: 100%;
+}
+
+
+.main-content {
+    max-width: 1220px;
+    background-color: #ffffff;
+    opacity: 100%;
+
+    /* TEMPORARY DELETE */
+    height: 100%;
+    padding:20px 50px 50px 50px;
+}
+
+.main-content-background
+
+.movepool {
+    margin-top: 150px;
+}
+
+.moves-learned {
+    width: 100%;
+}
+
+.col-0 {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.col-0-5 {
+    width: 4.166%;
+}
+
+.col-1 {
+    width: 8.333%;
+}
+
+.col-1-5 {
+    width: 12.5%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-2-25 {
+    width: 18.75%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.col-2-5 {
+    width: 20.83%;
+}
+
+.col-3-5 {
+    width: 29.16%
+}
+
+.col-10 {
+    width: 83.33%;
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+}
+
+.body-slider, .head-slider {
+    margin: 0px 0px 0px 0px;
+    padding-top: 10px;
+}
+
+.top-head-slider {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    padding-top: 00px;
+    margin-bottom: 40px !important;
+}
+
+.top-body-slider {
+    margin: 0px 0px 00px 0px;
+    padding: 0px 0px 0px 0px;
+    /* height: 80px */
+}
+
+/* Type Table */
+
+table.type-table {
+    border: transparent
+}
+
+.type {
+    font-size: 0.7em;
+    border: rgba(200, 200, 200, 0.33) solid 1px;
+    border-radius: 3px;
+    height: 32px;
+    width: 29px;
+    text-align: center;
+}
+
+.mult {
+    font-size: 0.6em;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.immune {
+    background-color: rgb(46, 52, 54);
+    color: rgb(255, 208, 67);
+}
+
+.weak05 {
+    background-color: rgb(164, 0, 0);
+    color: rgb(255, 208, 67);
+}
+
+.weak025 {
+    background-color: rgb(124, 0, 0);
+    color: rgb(255, 208, 67);
+}
+
+.strong2 {
+    background-color: rgb(78, 154, 6);
+    color: rgb(255, 208, 67);
+}
+
+.strong4 {
+    background-color: rgb(115, 210, 22);
+    color: rgb(255, 208, 67);
+}
+
+/* .body-slider,*/
+.head-slider {
+    margin-bottom: 20px;
+}
+
+/*  */
+
+/* Typings */
+
+.learn-move-info,
+.learn-move-info2 {
+    border-radius: 10px;
+    font-size: 0.8em;
+    padding: 0px 0px 0px 0px;
+}
+
+.Normal {
+    background-color: rgb(169, 169, 121);
+}
+
+.Fire {
+    background-color: rgb(240, 129, 44);
+}
+
+.Water {
+    background-color: rgb(104, 145, 240);
+}
+
+.Grass {
+    background-color: rgb(121, 201, 79);
+}
+
+.Electric {
+    background-color: rgb(248, 209, 44);
+}
+
+.Ice {
+    background-color: rgb(153, 217, 217);
+}
+
+.Fighting {
+    background-color: rgb(193, 44, 35);
+}
+
+.Poison {
+    background-color: rgb(161, 62, 161);
+}
+
+.Ground {
+    background-color: rgb(225, 193, 104);
+}
+
+.Flying {
+    background-color: rgb(169, 145, 240);
+}
+
+.Psychic {
+    background-color: rgb(248, 87, 137);
+}
+
+.Bug {
+    background-color: rgb(169, 185, 26);
+}
+
+.Rock {
+    background-color: rgb(185, 161, 53);
+}
+
+.Ghost {
+    background-color: rgb(112, 87, 153);
+}
+
+.Dragon {
+    background-color: rgb(112, 53, 248);
+}
+
+.Dark {
+    background-color: rgb(112, 87, 70);
+}
+
+.Steel {
+    background-color: rgb(185, 185, 209);
+}
+
+.Fairy {
+    background-color: rgb(239, 154, 174);
+}
+
+
+td.learn-move-info.Fighting, td.learn-move-info2.Fighting{
+    color:white
+}
+
+td.learn-move-info.Dragon, td.learn-move-info2.Dragon{
+    color:white
+}
+td.learn-move-info.Ghost, td.learn-move-info2.Ghost{
+    color:white
+}
+td.learn-move-info.Poison, td.learn-move-info2.Poison{
+    color:white
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Id's */
+
+#base-stats-table {
+    width: 100%;
+    margin-bottom: 50px
+}
+
+/* THIS DOESNT WORK NEED TO FIGURE OUT HOW TO CALC MARGIN */
+/* .fusion-image {
+    width: 70%;
+     margin-top: calc(div column height - image height / 2); 
+}*/
+
+.fusion-image:hover {
+    opacity: 0.75
+}
+
+div#frontImg>img.fusion-image {
+    width: 400px;
+    height: 400px;
+    margin: 00px 0px 00px 0px
+}
+
+
+#type-table>tr>td>div {
+    font-size: 0.4em;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+}
+
+#main-content-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1220px 1fr;
+    min-height: 1340px;
+}
+
+#pokemon-fusion-title {
+    text-align: center;
+    margin: auto;
+    padding: 20px 0px 20px 0px;
+}
+
+#pokemon-name {
+    font-size: 1.7em;
+    padding-top: 55px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+h4.h0b0,
+h4.h1b0,
+h4.h2b0,
+h4.h0b1,
+h4.h1b1,
+h4.h2b1,
+h4.h0b2,
+h4.h1b2,
+h4.h2b2 {
+    padding-top: 20px;
+    margin-bottom: 0px;
+    font-size: 0.9em;
+}
+
+.evolve-row{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 4px;
+}
+
+#body-location, #head-location{
+    margin-bottom: 200px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    font-size: 0.8em;
+    width: 100%
+}
+
+.body-location-text, .head-location-text{
+    font-weight: 400;
+
+}
+.small-pokeball-icon {
+    height: 20px;
+    width: 20px;
+    padding: 0px 0px 0px 0px;
+    margin: auto 0px auto 40px;
+}
+
+.body-location-row, .head-location-row {
+
+    padding-top: 25px;
+    padding-bottom: 20px
+
+}
+
+
+.hr-no-margin{
+    margin: 0px 0px 0px 0px;
+}
+
+.location-title2{
+    font-size: 1.4em;
+    padding: 0px 0px 0px 0px;
+}
+
+#head-location-name, #body-location-name {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 0.8em;
+}
+
+.location{
+    padding-bottom:8px;
+}
+
+
+#h0b0img > .fusion-image,
+#h1b0img > .fusion-image,
+#h2b0img > .fusion-image,
+#h0b1img > .fusion-image,
+#h1b1img > .fusion-image,
+#h2b1img > .fusion-image,
+#h0b2img > .fusion-image,
+#h1b2img > .fusion-image,
+#h2b2img > .fusion-image {
+
+width: 288px;
+height: 288px;
+
+
+}
+
+td.Status > img, td.Physical > img, td.Special > img, 
+td.Status2 > img, td.Physical2 > img, td.Special2 > img{
+
+    height: 40px;
+    width: 60px;
+} 
+
+
+
+
+
+
+
+
+

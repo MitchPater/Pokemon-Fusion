@@ -1,0 +1,89 @@
+{
+    "001": {
+        "name" : "bulbasaur",
+        "stats": {
+            "hp": 45,
+            "atk": 49,
+            "def": 49,
+            "spatk": 65,
+            "spdef": 65,
+            "spe": 45
+        },
+        "type1": "grass",
+        "type2": "",
+        "abilities": ["overgrow", "overgrow", "chlorophyll"],
+        "evolve": [
+            12,
+            38
+        ],
+        "catch": 45,
+        "movesLevel": {
+            "growl": 1,
+            "tackle": 1,
+            "vine whip": 7,
+            "2vine whip": 9,
+            "poison powder": 13,
+            "sleep powder": 13,
+            "take down": 15,
+            "razor leaf": 19,
+            "sweet scent": 21,
+            "growth": 25,
+            "double-edge": 27,
+            "worry seed": 31,
+            "synthesis": 33,
+            "seed bomb": 37
+        },
+        "location": [
+            "Pallet Town (starter)(gift)",
+            "Cerulean City(trade)",
+            "Viridian River(static)"
+        ],
+        "movesTm" : [
+            "toxic",
+            "hidden power"
+        ]
+    },
+    "007": {
+        "name" : "squirtle",
+        "stats": {
+            "hp": 44,
+            "atk": 48,
+            "def": 65,
+            "spatk": 50,
+            "spdef": 64,
+            "spe": 43
+        },
+        "type1": "water",
+        "type2": "",
+        "abilities": ["torrent", "torrent", "rain dish"],
+        "evolve": [
+            16,
+            32
+        ],
+        "catch": 45,
+        "movesLevel": {
+            "growl": 1,
+            "tackle": 1,
+            "vine whip": 7,
+            "2vine whip": 9,
+            "poison powder": 13,
+            "sleep powder": 13,
+            "take down": 15,
+            "razor leaf": 19,
+            "sweet scent": 21,
+            "growth": 25,
+            "double-edge": 27,
+            "worry seed": 31,
+            "synthesis": 33,
+            "seed bomb": 37
+        },
+        "location": [
+            "Pallet Town (starter)(gift)",
+            "Cerulean City(trade), Viridian River(static)"
+        ],
+        "movesTm" : [
+            "toxic",
+            "hidden power"
+        ]
+    }
+}
