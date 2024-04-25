@@ -1344,7 +1344,10 @@ footer{
   }
 
 
-
+#randFusion:hover, #revFusion:hover {
+    cursor: pointer;
+    opacity: 0.7;
+}
 
 
 
