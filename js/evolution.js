@@ -4789,7 +4789,7 @@ function DetermineTyping(bodyType1, bodyType2, headType1, headType2) {
         bodyType2 = ""
     }
 
-    if(headType1 == "Normal" && bodyType2 == "Flying" || headType1 == "Normal" && headType == "Flying")
+    if(headType1 == "Normal" && bodyType2 == "Flying" || headType1 == "Normal" && headType2 == "Flying")
     {
         headType1 = "Flying"
         headType2 = ""
