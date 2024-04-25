@@ -28,6 +28,13 @@
     <script src="../js/js-test.js"></script>
     <script type="module" , src="../js/evolution.js"></script>
 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
 
     <!-- Ball Animation -->
     <div class="ball-relative-container">
@@ -71,12 +78,12 @@
 
                         <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 bg-light">
 
-                            <div class="container-fluid search-container">
+                            <div class="container-fluid search-container-body">
                                 <input type="text" class="search bg-light" , id="bodySearch"
                                     placeholder="Body Pokemon...">
                             </div>
 
-                            <div class="container-fluid search-container">
+                            <div class="container-fluid search-container search-container-head">
                                 <input type="text" class="search bg-light" , id="headSearch"
                                     placeholder="Head Pokemon...">
                             </div>
@@ -817,20 +824,13 @@
                                 <hr style="width: 100%; padding: auto; margin-bottom: 30px;">
                             </div>
 
-                            <div class="col-12">
-                                <h2 class="location">Location</h2>
-                            </div>
-
-                            <div class="container">
-                                <hr style="width: 100%; padding: auto; margin-bottom: 30px;">
-                            </div>
                             <div class="row">
                                 <div class="col-6">
                                     <h3 class="location-title2">Body Location</h3>
 
                                     <div class="row">
 
-                                        <h5 class="col-6", id="body-location-name">Body-name</h5>
+                                        <h5 class="col-6" , id="body-location-name">Body-name</h5>
                                         <div class="col-3 location-body-icon-container"></div>
 
                                     </div>
@@ -848,7 +848,7 @@
 
                                     <div class="row">
 
-                                        <h5 class="col-6", id="head-location-name">Head-name</h5>
+                                        <h5 class="col-6" , id="head-location-name">Head-name</h5>
                                         <div class="col-3 location-head-icon-container"></div>
 
                                     </div>

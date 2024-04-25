@@ -2702,13 +2702,13 @@ function UpdateHTML(bodyId, headId, newState) {
 
     if (fusion.abilities[4]) {
         var abilitytxt5 = $(".ability").append("<h5 class='ability-text'>" + fusion.abilities[4] + "</h5>");
-        var abilitytxt5 = $(".ability").append("<h5 class='hidden-ability-text'>( Hidden Ability )</h5>");
+        var abilitytxt5 = $(".ability").append("<h5 class='hidden-ability-text'>(Hidden Ability)</h5>");
 
     }
 
     if (fusion.abilities[5]) {
         var abilitytxt6 = $(".ability").append("<h5 class='ability-text'>" + fusion.abilities[5] + "</h5>");
-        var abilitytxt5 = $(".ability").append("<h5 class='hidden-ability-text'>( Hidden Ability )</h5>");
+        var abilitytxt5 = $(".ability").append("<h5 class='hidden-ability-text'>(Hidden Ability)</h5>");
 
     }
 
