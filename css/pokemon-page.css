@@ -515,9 +515,11 @@ h5.hidden-ability-text{
 }
 
 .banner {
-    height: 100px;
+    height: 130px;
     width: 100%;
-    background-color:rgb(114, 136, 143)
+    background-color: rgb(83, 88, 92);
+
+    /* background-color:rgb(114, 136, 143) */
 }
 
 .barchart-bar {
@@ -888,7 +890,7 @@ text-align: left;
 
 
 .large-background {
-    background-color: rgb(96, 103, 109);
+    background-color:rgb(114, 136, 143);
 
     /* TEMPORARY DELETE */
     height: 100%;
@@ -1189,7 +1191,10 @@ div#frontImg>img.fusion-image {
 #pokemon-fusion-title {
     text-align: center;
     margin: auto;
-    padding: 20px 0px 20px 0px;
+    padding: 40px 0px 20px 0px;
+    color: white;
+    font-weight: 700;
+    font-size: 1.3em
 }
 
 #pokemon-name {
@@ -1294,15 +1299,19 @@ td.Status2 > img, td.Physical2 > img, td.Special2 > img{
 } 
 
 footer{
-    background-color: rgb(114, 136, 143);
+    background-color: rgb(83, 88, 92);
 }
 
 .footer-text{
     margin-top: 30px;
     margin-bottom: 30px;
-    margin-left: 100px;
+    margin-left: 95px;
     margin-right: 100px;
-    font-size: 0.7em;
+    font-size: 0.6em;
+    text-align: left;
+    color: white;
+    line-height: 1.25em;
+    
 }
 
 /* button */
@@ -1312,7 +1321,9 @@ footer{
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-color: rgb(100, 100, 100); /* Set a background color */
+    background-color:rgb(114, 136, 143);
+
+    /* background-color: rgb(118, 113, 113); Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
@@ -1323,12 +1334,13 @@ footer{
   }
   
   #toTopButton:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
+    background-color:rgb(93, 111, 117); /* Add a dark-grey background on hover */
   }
 
   .button-container {
-    padding-left: 90px;
+    padding-left: 95px;
     padding-right: 0px;
+    padding-top: 10px;
   }
 
 
