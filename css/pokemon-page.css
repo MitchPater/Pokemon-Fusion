@@ -58,34 +58,32 @@ th {
     --background-type1: rgb(241, 157, 104);
     --background-type2: rgb(107, 143, 251);
 
-    --h0b0-background-type1: rgb(255 ,0 ,0);
-    --h0b0-backgruond-type2: rgb(255,255,255);
+    --h0b0-background-type1: rgb(0, 0, 0);
+    --h0b0-background-type2: rgb(255,255,255);
 
     --h1b0-background-type1: rgb(0 ,0 ,0);
-    --h1b0-backgruond-type2: rgb(255,255,255);
+    --h1b0-background-type2: rgb(255,255,255);
 
     --h2b0-background-type1: rgb(0 ,0 ,0);
-    --h2b0-backgruond-type2: rgb(255,255,255);
+    --h2b0-background-type2: rgb(255,255,255);
 
     --h0b1-background-type1: rgb(0 ,0 ,0);
-    --h0b1-backgruond-type2: rgb(255,255,255);
+    --h0b1-background-type2: rgb(255,255,255);
 
     --h1b1-background-type1: rgb(0 ,0 ,0);
-    --h1b1-backgruond-type2: rgb(255,255,255);
+    --h1b1-background-type2: rgb(255,255,255);
 
     --h2b1-background-type1: rgb(0 ,0 ,0);
-    --h2b1-backgruond-type2: rgb(255,255,255);
+    --h2b1-background-type2: rgb(255,255,255);
 
     --h0b2-background-type1: rgb(0 ,0 ,0);
-    --h0b2-backgruond-type2: rgb(255,255,255);
+    --h0b2-background-type2: rgb(255,255,255);
 
     --h1b2-background-type1: rgb(0 ,0 ,0);
-    --h1b2-backgruond-type2: rgb(255,255,255);
+    --h1b2-background-type2: rgb(255,255,255);
     
     --h2b2-background-type1: rgb(0 ,0 ,0);
-    --h2b2-backgruond-type2: rgb(255,255,255);
-
-
+    --h2b2-background-type2: rgb(255,255,255);
 
 }
 
@@ -353,60 +351,60 @@ th {
     }
 }
 
-.evolve-cells.h0b0{
+.fusion-background-h0b0{
     /* background-color: rgb(241, 157, 104); */
     animation-name: fusion-background-h0b0;
     background-color: rgb(241, 157, 104);
     animation-duration: 26s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
-.evolve-cells.h1b0{
+.fusion-background-h1b0{
     animation-name: fusion-background-h1b0;
     background-color: rgb(241, 157, 104);
     animation-duration: 26s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
-.evolve-cells.h2b0{
+.fusion-background-h2b0{
     animation-name: fusion-background-h2b0;
     background-color: rgb(241, 157, 104);
     animation-duration: 26s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
-.evolve-cells.h0b1{
+.fusion-background-h0b1{
     animation-name: fusion-background-h0b1;
     background-color: rgb(241, 157, 104);
     animation-duration: 26s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
-.evolve-cells.h1b1{
+.fusion-background-h1b1{
     animation-name: fusion-background-h1b1;
     background-color: rgb(241, 157, 104);
     animation-duration: 26s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
-.evolve-cells.h2b1{
+.fusion-background-h2b1{
     animation-name: fusion-background-h2b1;
     background-color: rgb(241, 157, 104);
     animation-duration: 26s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
-.evolve-cells.h0b2{
+.fusion-background-h0b2{
     animation-name: fusion-background-h0b2;
     background-color: rgb(241, 157, 104);
     animation-duration: 26s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
-.evolve-cells.h1b2{
+.fusion-background-h1b2{
     animation-name: fusion-background-h1b2;
     background-color: rgb(241, 157, 104);
     animation-duration: 26s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
-.evolve-cells.h2b2 {
+.fusion-background-h2b2{
     animation-name: fusion-background-h2b2;
     background-color: rgb(241, 157, 104);
     animation-duration: 26s;
-    animation-iteration-count: infinite;
+    animation-iteration-count: infinite
 }
 
 /* .evolve-cells {
@@ -435,7 +433,7 @@ th {
     width: 150px;
 
 
-    animation: ball-x-animation 1.5s linear 1s 1 forwards
+    animation: ball-x-animation 1.0s linear 0.1s 1 forwards
 }
 
 .animation-ball-container-y {
@@ -446,8 +444,8 @@ th {
 
 
     animation-name: ball-y-animation;
-    animation-duration: 1.5s;
-    animation-delay: 1s;
+    animation-duration: 1.0s;
+    animation-delay: 0.1s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
 
@@ -455,14 +453,14 @@ th {
 
 .animation-pokemon-capture {
     animation-name: pokemon-capture;
-    animation-delay: 2.4s;
+    animation-delay: 1.0s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
 
 .animation-pokeball-image {
 
-    animation: pokeball-caught 2s linear 2.3s 1 forwards;
+    animation: pokeball-caught 1.5s linear 0.9s 1 forwards;
 }
 
 
@@ -519,6 +517,7 @@ h5.hidden-ability-text{
 .banner {
     height: 100px;
     width: 100%;
+    background-color:rgb(114, 136, 143)
 }
 
 .barchart-bar {
@@ -639,6 +638,14 @@ td.base-stat {
 
 
 .pokemon-data>td {
+    width: 150px;
+}
+
+.ability-data.ability{
+    width: 170px;
+}
+
+.pokemon-data>th {
     width: 150px;
 }
 
@@ -823,6 +830,7 @@ hr.learn-move-info2 {
 
 tr.include-hr {
     border-bottom: 1px solid rgba(209, 209, 209, 0.5);
+    font-size: 0.9em;
 }
 
 tr.include-hr>td,
@@ -863,11 +871,14 @@ text-align: left;
     font-weight: 700;
     text-transform: capitalize;
     border-radius: 10px;
-    width: 45%;
+    width: 40%;
+    height: 37px;
+    margin-bottom: 8px;
 }
 
 .type-1{
-    margin-right: 15px;
+    margin-right: 25px;
+    margin-left: 10px;
 }
 
 .fusion-pokemon {
@@ -877,7 +888,7 @@ text-align: left;
 
 
 .large-background {
-    background-color: lightslategrey;
+    background-color: rgb(96, 103, 109);
 
     /* TEMPORARY DELETE */
     height: 100%;
@@ -1169,6 +1180,12 @@ div#frontImg>img.fusion-image {
     min-height: 1340px;
 }
 
+.footer-grid-container
+{
+    display: grid;
+    grid-template-columns: 1fr 1220px 1fr;
+}
+
 #pokemon-fusion-title {
     text-align: center;
     margin: auto;
@@ -1202,7 +1219,7 @@ h4.h2b2 {
 }
 
 #body-location, #head-location{
-    margin-bottom: 200px;
+    margin-bottom: 50px;
     padding: 0px 0px 0px 0px;
     text-align: center;
     font-size: 0.8em;
@@ -1212,15 +1229,17 @@ h4.h2b2 {
 .body-location-text, .head-location-text{
     font-weight: 400;
     text-align: left;
-    padding-left: 70px;
+    padding-left: 40px;
     padding-right: 50px;
+    font-size: 0.7em;
+    line-height: 1.4em;
 
 }
 .small-pokeball-icon {
     height: 20px;
     width: 20px;
     padding: 0px 0px 0px 0px;
-    margin: auto 0px auto 40px;
+    margin: auto 0px auto 50px;
 }
 
 .body-location-row, .head-location-row {
@@ -1274,7 +1293,43 @@ td.Status2 > img, td.Physical2 > img, td.Special2 > img{
     width: 60px;
 } 
 
+footer{
+    background-color: rgb(114, 136, 143);
+}
 
+.footer-text{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 0.7em;
+}
+
+/* button */
+#toTopButton { /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(100, 100, 100); /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  #toTopButton:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
+
+  .button-container {
+    padding-left: 90px;
+    padding-right: 0px;
+  }
 
 
 

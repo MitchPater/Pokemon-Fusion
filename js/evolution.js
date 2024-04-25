@@ -1601,10 +1601,10 @@ function TypeEffective(bodyType1, bodyType2, headType1, headType2) {
     DetermineTyping(bodyType1, bodyType2, headType1, headType2)
 
     var typeCount = 2;
+
     if (types[1] == "") {
         typeCount = 1
     }
-
 
 
     //NOTE I HAVENT ADDED THIS TO THE CODE YET
@@ -3898,6 +3898,9 @@ function ReloadPage(body, head, newState) {
 
     // console.log(fusion)
     Search(body, head)
+
+    //resetting animations
+    ResetBackgrounds();
 }
 
 var counterTest = 1
@@ -3933,7 +3936,7 @@ function EventListener() {
             setTimeout(function () {
                 UnloadBallAnimation("h0b0")
                 ReloadPage(h0b0BodyListen, h0b0HeadListen, true)
-            }, 4500);
+            }, 2600);
 
         });
 
@@ -3942,7 +3945,7 @@ function EventListener() {
             setTimeout(function () {
                 UnloadBallAnimation("h1b0")
                 ReloadPage(h1b0BodyListen, h1b0HeadListen, true)
-            }, 4500);
+            }, 2600);
 
         });
 
@@ -3951,7 +3954,7 @@ function EventListener() {
             setTimeout(function () {
                 UnloadBallAnimation("h2b0")
                 ReloadPage(h2b0BodyListen, h2b0HeadListen, true)
-            }, 4500);
+            }, 2600);
 
         });
 
@@ -3960,7 +3963,7 @@ function EventListener() {
             setTimeout(function () {
                 UnloadBallAnimation("h0b1")
                 ReloadPage(h0b1BodyListen, h0b1HeadListen, true)
-            }, 4500);
+            }, 2600);
 
         });
 
@@ -3969,7 +3972,7 @@ function EventListener() {
             setTimeout(function () {
                 UnloadBallAnimation("h1b1")
                 ReloadPage(h1b1BodyListen, h1b1HeadListen, true)
-            }, 4500);
+            }, 2600);
 
         });
 
@@ -3978,7 +3981,7 @@ function EventListener() {
             setTimeout(function () {
                 UnloadBallAnimation("h2b1")
                 ReloadPage(h2b1BodyListen, h2b1HeadListen, true)
-            }, 4500);
+            }, 2600);
 
         });
 
@@ -3987,7 +3990,7 @@ function EventListener() {
             setTimeout(function () {
                 UnloadBallAnimation("h0b2")
                 ReloadPage(h0b2BodyListen, h0b2HeadListen, true)
-            }, 4500);
+            }, 2600);
 
         });
 
@@ -3996,7 +3999,7 @@ function EventListener() {
             setTimeout(function () {
                 UnloadBallAnimation("h1b2")
                 ReloadPage(h1b2BodyListen, h1b2HeadListen, true)
-            }, 4500);
+            }, 2600);
 
         });
 
@@ -4005,7 +4008,7 @@ function EventListener() {
             setTimeout(function () {
                 UnloadBallAnimation("h2b2")
                 ReloadPage(h2b2BodyListen, h2b2HeadListen, true)
-            }, 4500);
+            }, 2600);
 
         });
 
@@ -4698,6 +4701,35 @@ function HeadSlider() {
     }
 }
 
+function ResetBackgrounds(){
+    
+    RestartBackgroundAnimation($(".evolve-cells.h0b0")[0], "h0b0")
+
+    RestartBackgroundAnimation($(".evolve-cells.h1b0")[0], "h1b0")
+
+    RestartBackgroundAnimation($(".evolve-cells.h2b0")[0] , "h2b0")
+
+    RestartBackgroundAnimation($(".evolve-cells.h0b1")[0] , "h0b1")
+
+    RestartBackgroundAnimation($(".evolve-cells.h1b1")[0] , "h1b1")
+
+    RestartBackgroundAnimation($(".evolve-cells.h2b1")[0] , "h2b1")
+
+    RestartBackgroundAnimation($(".evolve-cells.h0b2")[0] , "h0b2")
+
+    RestartBackgroundAnimation($(".evolve-cells.h1b2")[0] , "h1b2")
+
+    RestartBackgroundAnimation($(".evolve-cells.h2b2")[0] , "h2b2")
+
+}
+
+function RestartBackgroundAnimation(element, index){
+    var fusionBackgroundString = "fusion-background-" + index
+    element.classList.remove(fusionBackgroundString)
+    element.offsetWidth
+    element.style.animation = null;
+    element.classList.add(fusionBackgroundString)
+}
 function BallAnimation(clickId) {
     //Non specific to the general animation - ball container x needs to be modified to be in the right position
     console.log("BallAnimation being played at: " + clickId)
@@ -4750,6 +4782,26 @@ function UnloadBallAnimation(clickId) {
 function DetermineTyping(bodyType1, bodyType2, headType1, headType2) {
 
     var typeCount = 2;
+
+    if(bodyType1 == "Normal" && bodyType2 == "Flying" || bodyType1 == "Flying" && bodyType2 == "Normal")
+    {
+        bodyType1 = "Flying"
+        bodyType2 = ""
+    }
+
+    if(headType1 == "Normal" && bodyType2 == "Flying" || headType1 == "Normal" && headType == "Flying")
+    {
+        headType1 = "Flying"
+        headType2 = ""
+    }
+
+    console.log(bodyType1)
+    console.log(bodyType2)
+
+
+    console.log(headType1)
+    console.log(headType2)
+
 
     //Head type = primary type
     types[0] = headType1;
@@ -4841,15 +4893,17 @@ function FusionColour(type1, type2, fusionIndex) {
         }
 
         else if (type1 == "Dark") {
-            document.documentElement.style.setProperty("--" + fusionIndex + "background-type1", "rgb(112, 87, 70)");
+            document.documentElement.style.setProperty("--" + fusionIndex + "-background-type1", "rgb(112, 87, 70)");
         }
 
         else if (type1 == "Steel") {
-            document.documentElement.style.setProperty("--" + fusionIndex + "background-type1", "rgb(185, 185, 209)");
+            document.documentElement.style.setProperty("--" + fusionIndex + "-background-type1", "rgb(185, 185, 209)");
+            console.log("should be set 6 times lol")
+            console.log("--" + fusionIndex + "background-type1")
         }
 
         else if (type1 == "Fairy") {
-            document.documentElement.style.setProperty("--" + fusionIndex + "background-type1", "rgb(239, 154, 174)");
+            document.documentElement.style.setProperty("--" + fusionIndex + "-background-type1", "rgb(239, 154, 174)");
         }
     }
 
@@ -5285,7 +5339,7 @@ $(window).on('load', function () {
     //SetVariablesFromData(data, bodyRef, headRef)
 
 
-    ReloadPage(129, 315, false);
+    ReloadPage(7, 4, false);
     EventListener();
     //RunTest()
 })
